@@ -1,4 +1,4 @@
-package com.smswithsmpp.nipuna.samplesms;
+package com.smswithsmpp.nipuna.samplesms.controller;
 
 import com.smswithsmpp.nipuna.samplesms.service.MultipleSubmitExample;
 import org.springframework.web.bind.annotation.CrossOrigin;
