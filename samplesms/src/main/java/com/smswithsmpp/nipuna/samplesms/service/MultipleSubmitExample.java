@@ -93,7 +93,7 @@ public class MultipleSubmitExample {
         SMPPSession session = new SMPPSession();
         try {
             session.setMessageReceiverListener(new MessageReceiverListenerImpl());
-            String systemId = session.connectAndBind("222.165.140.145", Integer.valueOf(5020), new BindParameter(BindType.BIND_TX, "HELAVIRU", "helaviru", "session.bind_transceiver", TypeOfNumber.UNKNOWN, NumberingPlanIndicator.UNKNOWN, null));
+            String systemId = session.connectAndBind(smppIp, port, new BindParameter(BindType.BIND_TX, username, password, SERVICE_TYPE, TypeOfNumber.UNKNOWN, NumberingPlanIndicator.UNKNOWN, null));
             log.info("Connected with SMPP with system id {}", systemId);
         } catch (IOException e) {
             log.error("I/O error occured", e);
